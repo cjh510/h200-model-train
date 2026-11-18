@@ -12,7 +12,6 @@
 
 | 目录 | 定位 | 入口 |
 |---|---|---|
-| `llm-bench-docker/` | **基线版**：Docker 路线从拉镜像到出报告的首版工程骨架 | `01_fetch.sh` → `05_report.py` |
 | `llm-bench-fix/` | **修复版**：单入口多 phase 的压测矩阵，修正首版的口径与门禁问题，带 `probes/` 硬件探针 | `04_bench.sh --phase <name>` |
 | `llm-bench-split/` | **拆分版**：把 `fix` 的巨型脚本按阶段拆成 `bench/00-config` ~ `70-phase-mfu`，配置与逻辑分离，便于复用与二次开发 | `bench/40-run.sh` |
 | `e2e-megatron-56b-2501/` | **端到端压测**：2×8 H200 上 56B 级模型的单机/双机对照 | `run_56b_2x8h200.sh` |
@@ -21,10 +20,10 @@
 ### 演进关系
 
 ```
-llm-bench-docker  ──修复口径/门禁──>  llm-bench-fix  ──按阶段拆分──>  llm-bench-split
-                                            │
-                                            └──同一套采集口径──>  e2e-megatron-56b-2501
-                                                                  megatron-swift-qwen38-cpt
+llm-bench-fix  ──按阶段拆分──>  llm-bench-split
+      │
+      └──同一套采集口径──>  e2e-megatron-56b-2501
+                             megatron-swift-qwen38-cpt
 ```
 
 ---
@@ -33,7 +32,6 @@ llm-bench-docker  ──修复口径/门禁──>  llm-bench-fix  ──按阶�
 
 ```
 .
-├── llm-bench-docker/          # 基线版（含 TESTPLAN、环境/拓扑快照、统计数据）
 ├── llm-bench-fix/             # 修复版
 │   ├── 02_precheck.sh         #   环境与硬件门禁
 │   ├── 03_deploy.sh           #   起容器 / 挂载 / 环境注入
@@ -188,7 +186,7 @@ NNODES=2 NODE_RANK=1 MASTER_ADDR=<node-0 管理 IP> \
 | 变量 | 默认值 | 说明 |
 |---|---|---|
 | `ROOT` | `/root/llm-bench` | 宿主上挂进容器的根目录；Megatron 源码与所有产物都必须在这下面 |
-| `MODEL_ROOT` | `cluster.env` 里是 `/data/Qwen3.8-27B` | **语义是模型根目录，但当前默认值多带了一层模型名**：`env.sh` 会再拼 `Qwen3.8-27B`，结果变成 `/data/Qwen3.8-27B/Qwen3.8-27B`。要么把 `MODEL_ROOT` 改成 `/data`，要么显式指定 `MODEL_27B_DIR` / `MODEL_FLASH_NEXT_DIR` |
+| `MODEL_ROOT` | `cluster.env` 里是 `/data` | 模型**根目录**，`env.sh` 会在其后拼 `Qwen3.8-27B` / `Qwen3.8-Flash-Next`。填成 `.../Qwen3.8-27B` 会得到 `/data/Qwen3.8-27B/Qwen3.8-27B` |
 | `MODELSCOPE_CACHE` | `/mnt/shared/modelscope_cache` | 多机必须落在共享存储上 |
 | `PROJECT_REMOTE_DIR` | `/root/megatron-swift-qwen38-cpt` | 代码在目标机上的实际路径 |
 
@@ -197,7 +195,6 @@ NNODES=2 NODE_RANK=1 MASTER_ADDR=<node-0 管理 IP> \
 | 位置 | 默认值 | 要改什么 |
 |---|---|---|
 | `e2e-megatron-56b-2501/` 三个脚本 | `nvcr.nju.edu.cn/nvidia/pytorch:25.01-py3` | 换成你能拉取该镜像的地址（本地 registry 或 `nvcr.io`） |
-| `llm-bench-docker/01_fetch.sh` | `nvcr.io/nvidia/pytorch:$NGC_PYTORCH_TAG`（默认 `25.06-py3`）、`MEGATRON_REF=core_v0.13.1` | 设置 `NV_API_KEY`（NGC API Key），按驱动版本选 tag |
 | `megatron-swift-qwen38-cpt/config/image.env` | ModelScope 官方 `swift4.5.3` | 版本必须 ≥ v4.5.3，否则 T0 探针直接判 `UNSUPPORTED` 并中止 |
 
 镜像 tar 与源码包需按 `00_prepare.sh` 注释的布局就位：`$ROOT/pytorch-*.tar`、`$ROOT/Megatron-LM-core_v0.13.1.zip`，解包目录必须正好叫 `Megatron-LM`（`PYTHONPATH` 依赖它，改名后 8 个 rank 会全部 import 失败）。
@@ -246,7 +243,7 @@ bash scripts/00_preflight.sh
 ## 已知限制
 
 - 仓库不含历史跑测结果，文档里提到的数字需自行重跑复现。
-- `llm-bench-docker` 为早期基线，存在口径问题：FP8 档实际未启用 FP8 计算（日志中 `fp8=None`、`params_dtype=bfloat16`，与 bf16 档首步 loss / grad norm 逐位相同）。`llm-bench-fix` 已用 `--phase argscheck` 在跑测前拦截此类情况。
+- 早期 Docker 基线版（未随仓库发布）存在口径问题：FP8 档实际未启用 FP8 计算（日志中 `fp8=None`、`params_dtype=bfloat16`，与 bf16 档首步 loss / grad norm 逐位相同）。`llm-bench-fix` 已用 `--phase argscheck` 在跑测前拦截此类情况。
 - 双机场景的结论强依赖 RoCE 链路质量，换机器后需重跑 `--phase nccl` 建立基线。
 
 ## License
