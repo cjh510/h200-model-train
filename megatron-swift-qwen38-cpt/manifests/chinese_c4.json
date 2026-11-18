@@ -1,0 +1,600 @@
+{
+  "key": "chinese_c4",
+  "source_id": "swift/chinese-c4",
+  "source_url": "https://www.modelscope.cn/api/v1/datasets/swift/chinese-c4/repo/tree?Revision=master&Recursive=true",
+  "captured_at": "2026-11-13T16:42:02+08:00",
+  "data_suffix": ".jsonl.zst",
+  "file_count": 98,
+  "data_file_count": 96,
+  "data_total_bytes": 22875768014,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "name": ".gitattributes",
+      "size": 2265,
+      "sha256": "79deb409a995d414d9b2e89b5e16a5f46fcaa7596c63242dd0bd72311a422458"
+    },
+    {
+      "path": "README.md",
+      "name": "README.md",
+      "size": 631,
+      "sha256": "390a29d70b7ba68ee85102debd3f707f118e09d8929f739a222631d0fcd700eb"
+    },
+    {
+      "path": "data/chinese-c4-0000-of-0096.jsonl.zst",
+      "name": "chinese-c4-0000-of-0096.jsonl.zst",
+      "size": 238339507,
+      "sha256": "cb66910197b2b571e3577edfb8a6d14dcb90354da96a4dc1a34d94c4293a5ec9"
+    },
+    {
+      "path": "data/chinese-c4-0001-of-0096.jsonl.zst",
+      "name": "chinese-c4-0001-of-0096.jsonl.zst",
+      "size": 238337347,
+      "sha256": "c1b1106f4de0b01828d361dc46e6db2646bd51ab681dba599c477daedb3cdbf0"
+    },
+    {
+      "path": "data/chinese-c4-0002-of-0096.jsonl.zst",
+      "name": "chinese-c4-0002-of-0096.jsonl.zst",
+      "size": 238245407,
+      "sha256": "1f9c3cac2dd7b673d53f8e9f7c454c6c6c302ea66bc03204f5d84e643e63bc62"
+    },
+    {
+      "path": "data/chinese-c4-0003-of-0096.jsonl.zst",
+      "name": "chinese-c4-0003-of-0096.jsonl.zst",
+      "size": 238236509,
+      "sha256": "405f13d97790cf3fb8edeee894411467457abd0b2d5fe7f59e88b9239c84d1d7"
+    },
+    {
+      "path": "data/chinese-c4-0004-of-0096.jsonl.zst",
+      "name": "chinese-c4-0004-of-0096.jsonl.zst",
+      "size": 238240970,
+      "sha256": "b17fdb9d3204d3c0fcfd69488145232cf9273cef3510e497f1056f90bb8deb3b"
+    },
+    {
+      "path": "data/chinese-c4-0005-of-0096.jsonl.zst",
+      "name": "chinese-c4-0005-of-0096.jsonl.zst",
+      "size": 238300011,
+      "sha256": "ff03d6f5da6eca42b90209971dc42373b0d1e6dbe0375f74eac276c58f6d7202"
+    },
+    {
+      "path": "data/chinese-c4-0006-of-0096.jsonl.zst",
+      "name": "chinese-c4-0006-of-0096.jsonl.zst",
+      "size": 238185669,
+      "sha256": "108753964c4b1206dacfdedd66e101de6631d7baaceb24af58bdf9eca7235d57"
+    },
+    {
+      "path": "data/chinese-c4-0007-of-0096.jsonl.zst",
+      "name": "chinese-c4-0007-of-0096.jsonl.zst",
+      "size": 238230485,
+      "sha256": "eb33c00477fc163bfd7f64aebdc659f7e549de686d96ca5f386d1cac13ff80ee"
+    },
+    {
+      "path": "data/chinese-c4-0008-of-0096.jsonl.zst",
+      "name": "chinese-c4-0008-of-0096.jsonl.zst",
+      "size": 238352245,
+      "sha256": "ebfaba3ff4b01ffb6a0eb89360917bc5620f81392ceadbd9cfff028b1985d0e1"
+    },
+    {
+      "path": "data/chinese-c4-0009-of-0096.jsonl.zst",
+      "name": "chinese-c4-0009-of-0096.jsonl.zst",
+      "size": 238228202,
+      "sha256": "015965f49d5431c4098c718b2626de602b59e9158276c00c19e71ad51cbb6cc9"
+    },
+    {
+      "path": "data/chinese-c4-0010-of-0096.jsonl.zst",
+      "name": "chinese-c4-0010-of-0096.jsonl.zst",
+      "size": 238117611,
+      "sha256": "10f3added8a348b0bb6c59f18c1ce525de089054be63e6ef41c157f3e193e071"
+    },
+    {
+      "path": "data/chinese-c4-0011-of-0096.jsonl.zst",
+      "name": "chinese-c4-0011-of-0096.jsonl.zst",
+      "size": 238454453,
+      "sha256": "3474ebd9d3687b16347ffb2754dc87a8686ff230caa0b16e209bdfb57f5b6d75"
+    },
+    {
+      "path": "data/chinese-c4-0012-of-0096.jsonl.zst",
+      "name": "chinese-c4-0012-of-0096.jsonl.zst",
+      "size": 238362295,
+      "sha256": "b12938c00a3f8a234cdb16c0b648a70e5f361fbd588ac45a88f071f975825688"
+    },
+    {
+      "path": "data/chinese-c4-0013-of-0096.jsonl.zst",
+      "name": "chinese-c4-0013-of-0096.jsonl.zst",
+      "size": 238327903,
+      "sha256": "1f44d60a7f516a66baef2c88e01efbf3e37450bc405129c5c7f765cf3f0bdbe3"
+    },
+    {
+      "path": "data/chinese-c4-0014-of-0096.jsonl.zst",
+      "name": "chinese-c4-0014-of-0096.jsonl.zst",
+      "size": 238293819,
+      "sha256": "cd2a34b245ff08846ad0b1e6cab4d47704a5184314f9ad3bde620d2789b9cf0c"
+    },
+    {
+      "path": "data/chinese-c4-0015-of-0096.jsonl.zst",
+      "name": "chinese-c4-0015-of-0096.jsonl.zst",
+      "size": 238423689,
+      "sha256": "6c430c313877a1b7a5d87a2da5531f101802c3a91915c26e3505f205ee4da1fe"
+    },
+    {
+      "path": "data/chinese-c4-0016-of-0096.jsonl.zst",
+      "name": "chinese-c4-0016-of-0096.jsonl.zst",
+      "size": 238295769,
+      "sha256": "486afa05f9687a207e4a874cad767f6f0c2931a1d27b8d4252855aca4d3fb85f"
+    },
+    {
+      "path": "data/chinese-c4-0017-of-0096.jsonl.zst",
+      "name": "chinese-c4-0017-of-0096.jsonl.zst",
+      "size": 238453148,
+      "sha256": "d24656132513ae8afb3c731f1bb8185fb11d0b0e0114941c6b5eb252bd0f274d"
+    },
+    {
+      "path": "data/chinese-c4-0018-of-0096.jsonl.zst",
+      "name": "chinese-c4-0018-of-0096.jsonl.zst",
+      "size": 238149057,
+      "sha256": "9d7c0372cf48f6c7479c769c2b8ee4a207c4edee2a804e8824cfd557a78d6406"
+    },
+    {
+      "path": "data/chinese-c4-0019-of-0096.jsonl.zst",
+      "name": "chinese-c4-0019-of-0096.jsonl.zst",
+      "size": 238221880,
+      "sha256": "3cc8e3d251f5d5c410f3e69019fb8b35c265d799b0716bb0aa5e2b861747e61e"
+    },
+    {
+      "path": "data/chinese-c4-0020-of-0096.jsonl.zst",
+      "name": "chinese-c4-0020-of-0096.jsonl.zst",
+      "size": 238253385,
+      "sha256": "83bc4fe4c3cfed70767a6a3d2b6cf4882c9a06880386f4fa663396dbbcfb8a46"
+    },
+    {
+      "path": "data/chinese-c4-0021-of-0096.jsonl.zst",
+      "name": "chinese-c4-0021-of-0096.jsonl.zst",
+      "size": 238409738,
+      "sha256": "837055f2005a7b95b3d8ac8f8c01180b6f959802715732bed41c5694a84d1caa"
+    },
+    {
+      "path": "data/chinese-c4-0022-of-0096.jsonl.zst",
+      "name": "chinese-c4-0022-of-0096.jsonl.zst",
+      "size": 238239993,
+      "sha256": "5840e4f40c4a4d5213ba7e9aca48d3bcdc409725d52d7c19f6f30b3f8dd24ba6"
+    },
+    {
+      "path": "data/chinese-c4-0023-of-0096.jsonl.zst",
+      "name": "chinese-c4-0023-of-0096.jsonl.zst",
+      "size": 238273229,
+      "sha256": "8ad5520f34398e5145f2023cfffc1529a20b58b932b70faf6f26d01bc47e6538"
+    },
+    {
+      "path": "data/chinese-c4-0024-of-0096.jsonl.zst",
+      "name": "chinese-c4-0024-of-0096.jsonl.zst",
+      "size": 238364890,
+      "sha256": "6c17df4a356bf910f6f853edc0d03b39ce982626bbf3bc7a7d6b46aa70db5b8a"
+    },
+    {
+      "path": "data/chinese-c4-0025-of-0096.jsonl.zst",
+      "name": "chinese-c4-0025-of-0096.jsonl.zst",
+      "size": 238251705,
+      "sha256": "de96c3bdab4fe59e6157c0e1f2d533a3686bc27ae9257d8184015648ed7275cc"
+    },
+    {
+      "path": "data/chinese-c4-0026-of-0096.jsonl.zst",
+      "name": "chinese-c4-0026-of-0096.jsonl.zst",
+      "size": 238287119,
+      "sha256": "45c6cac90fa9d8756cd76758a9acad191b9669f66ac28630dfcba98e641d6dbd"
+    },
+    {
+      "path": "data/chinese-c4-0027-of-0096.jsonl.zst",
+      "name": "chinese-c4-0027-of-0096.jsonl.zst",
+      "size": 238266377,
+      "sha256": "bca60402e016b83b9a7bb1504a761655aa33ec8c01762afbc46d706f25308430"
+    },
+    {
+      "path": "data/chinese-c4-0028-of-0096.jsonl.zst",
+      "name": "chinese-c4-0028-of-0096.jsonl.zst",
+      "size": 238424410,
+      "sha256": "94cc9d47d88e98572964f9b0cd72d7a9331ea7b839d753d973126483637556fc"
+    },
+    {
+      "path": "data/chinese-c4-0029-of-0096.jsonl.zst",
+      "name": "chinese-c4-0029-of-0096.jsonl.zst",
+      "size": 238281408,
+      "sha256": "293952d1494a9f57c1294919a85ac6f8df5eff5fcd37404c74f76fab2c5bceaa"
+    },
+    {
+      "path": "data/chinese-c4-0030-of-0096.jsonl.zst",
+      "name": "chinese-c4-0030-of-0096.jsonl.zst",
+      "size": 238246248,
+      "sha256": "3910786461b9511c038cbfcaaa2d2ab0d7e947f01cf2aa84de59b1ddb7d4e6af"
+    },
+    {
+      "path": "data/chinese-c4-0031-of-0096.jsonl.zst",
+      "name": "chinese-c4-0031-of-0096.jsonl.zst",
+      "size": 238327281,
+      "sha256": "2988d1ae6fdf87313c0a053d43350cdc35a6ab52c33847e0c421d2aaf5b59ddd"
+    },
+    {
+      "path": "data/chinese-c4-0032-of-0096.jsonl.zst",
+      "name": "chinese-c4-0032-of-0096.jsonl.zst",
+      "size": 238140425,
+      "sha256": "2a191cb5a1a6e90510b8bf725bfc923d564bd8ab98c7972ed09eb1f94b957d44"
+    },
+    {
+      "path": "data/chinese-c4-0033-of-0096.jsonl.zst",
+      "name": "chinese-c4-0033-of-0096.jsonl.zst",
+      "size": 238213534,
+      "sha256": "3828bc336b296a4dd989e8a9232284247e1ca3187fdaf165032861af7c34508c"
+    },
+    {
+      "path": "data/chinese-c4-0034-of-0096.jsonl.zst",
+      "name": "chinese-c4-0034-of-0096.jsonl.zst",
+      "size": 238231201,
+      "sha256": "92a64e0320bf4fd3656dc518be553cb6d4d7411c7aea1f151e56651a13e5014c"
+    },
+    {
+      "path": "data/chinese-c4-0035-of-0096.jsonl.zst",
+      "name": "chinese-c4-0035-of-0096.jsonl.zst",
+      "size": 238231532,
+      "sha256": "60f45d9cf43000fea4a512f263f22c443cfe832cfbb8b76d5c7941621ddcb920"
+    },
+    {
+      "path": "data/chinese-c4-0036-of-0096.jsonl.zst",
+      "name": "chinese-c4-0036-of-0096.jsonl.zst",
+      "size": 238281506,
+      "sha256": "d721704e34ac3cf928e0bb1521f83711cf8918c4dacfe4526b043684dd49c720"
+    },
+    {
+      "path": "data/chinese-c4-0037-of-0096.jsonl.zst",
+      "name": "chinese-c4-0037-of-0096.jsonl.zst",
+      "size": 238378271,
+      "sha256": "0c574ea251fcccd6570f0c6e43f2710d5f5dbc79b8114814814b6113ca870842"
+    },
+    {
+      "path": "data/chinese-c4-0038-of-0096.jsonl.zst",
+      "name": "chinese-c4-0038-of-0096.jsonl.zst",
+      "size": 238273655,
+      "sha256": "ea1f0085b89d18a9fab27b3a1598daa821abe00adc043237ad86f6feed5af3ea"
+    },
+    {
+      "path": "data/chinese-c4-0039-of-0096.jsonl.zst",
+      "name": "chinese-c4-0039-of-0096.jsonl.zst",
+      "size": 238347129,
+      "sha256": "c05536912778f4f04367f7424c5221edff93a5453b9f3b214ee90199f0209be8"
+    },
+    {
+      "path": "data/chinese-c4-0040-of-0096.jsonl.zst",
+      "name": "chinese-c4-0040-of-0096.jsonl.zst",
+      "size": 238323164,
+      "sha256": "81a7fc4a2bac7be369946520f8e99d474fed34e087909e9885e1216eacd74a1f"
+    },
+    {
+      "path": "data/chinese-c4-0041-of-0096.jsonl.zst",
+      "name": "chinese-c4-0041-of-0096.jsonl.zst",
+      "size": 238248456,
+      "sha256": "3d74c78ab188e503f2a84f583868ddfa076c02f465a0a087c955d8dc49546356"
+    },
+    {
+      "path": "data/chinese-c4-0042-of-0096.jsonl.zst",
+      "name": "chinese-c4-0042-of-0096.jsonl.zst",
+      "size": 238235270,
+      "sha256": "b9fc75d9915168756832f6b462364d13eb74a3c711bdcd788f7db04071015564"
+    },
+    {
+      "path": "data/chinese-c4-0043-of-0096.jsonl.zst",
+      "name": "chinese-c4-0043-of-0096.jsonl.zst",
+      "size": 238191645,
+      "sha256": "ea0d1fa3417e4035375fa7eb0c29739e654209c20be0c76fe730a78ec556f924"
+    },
+    {
+      "path": "data/chinese-c4-0044-of-0096.jsonl.zst",
+      "name": "chinese-c4-0044-of-0096.jsonl.zst",
+      "size": 238367720,
+      "sha256": "947bfaf28e7d2b0fa5b05df5776695df7bf3954963fec7f307cb9c7d7fae7bae"
+    },
+    {
+      "path": "data/chinese-c4-0045-of-0096.jsonl.zst",
+      "name": "chinese-c4-0045-of-0096.jsonl.zst",
+      "size": 238250038,
+      "sha256": "3ee0725afa3a563b3e359ad26842b024d155883ca950cc72cdd07c8cd21a6818"
+    },
+    {
+      "path": "data/chinese-c4-0046-of-0096.jsonl.zst",
+      "name": "chinese-c4-0046-of-0096.jsonl.zst",
+      "size": 238414858,
+      "sha256": "d630de04a032ee9ba3d693c450547dc4ecdcdac75e20dde86c1a53fcbf6378e9"
+    },
+    {
+      "path": "data/chinese-c4-0047-of-0096.jsonl.zst",
+      "name": "chinese-c4-0047-of-0096.jsonl.zst",
+      "size": 238184748,
+      "sha256": "aecc70a4522d622df80446434caa64bc5d2b1433500161a9b6712ed0aebece37"
+    },
+    {
+      "path": "data/chinese-c4-0048-of-0096.jsonl.zst",
+      "name": "chinese-c4-0048-of-0096.jsonl.zst",
+      "size": 238353556,
+      "sha256": "b257a8e6d3551ac39a4b119853d14bfa231040b86a90a6ac6b7ab072630a2c17"
+    },
+    {
+      "path": "data/chinese-c4-0049-of-0096.jsonl.zst",
+      "name": "chinese-c4-0049-of-0096.jsonl.zst",
+      "size": 238419772,
+      "sha256": "8ffb47baa7c260ba5a173f79c2e0e1757f99efe4868ac16c39a9e9e86cd48a38"
+    },
+    {
+      "path": "data/chinese-c4-0050-of-0096.jsonl.zst",
+      "name": "chinese-c4-0050-of-0096.jsonl.zst",
+      "size": 238271991,
+      "sha256": "aca85816c2bc03cf27a94d6f37f5cc31a147ed31f3ab7654295bdda6e66cf4f0"
+    },
+    {
+      "path": "data/chinese-c4-0051-of-0096.jsonl.zst",
+      "name": "chinese-c4-0051-of-0096.jsonl.zst",
+      "size": 238179936,
+      "sha256": "7d149a8500537a0658e7e70f85fd791cf83298b52e82406e5e75253fa305e22d"
+    },
+    {
+      "path": "data/chinese-c4-0052-of-0096.jsonl.zst",
+      "name": "chinese-c4-0052-of-0096.jsonl.zst",
+      "size": 238352996,
+      "sha256": "86ae562abc6eb8992b1e2d506c4a519b61e6cad590907b80ef02f9beeb971038"
+    },
+    {
+      "path": "data/chinese-c4-0053-of-0096.jsonl.zst",
+      "name": "chinese-c4-0053-of-0096.jsonl.zst",
+      "size": 238289171,
+      "sha256": "6b7780b312185dc2cbe725783ff4bebb71adb9572232cc736e21fa60311b35bb"
+    },
+    {
+      "path": "data/chinese-c4-0054-of-0096.jsonl.zst",
+      "name": "chinese-c4-0054-of-0096.jsonl.zst",
+      "size": 238190886,
+      "sha256": "01aebc7fd8a625cfecc6718fef8c34295c269aa07e3e57dd9c0152b7e54fe45b"
+    },
+    {
+      "path": "data/chinese-c4-0055-of-0096.jsonl.zst",
+      "name": "chinese-c4-0055-of-0096.jsonl.zst",
+      "size": 238295947,
+      "sha256": "ea13fd6eff249f4f746352c391cca6ad2a5896f8a0f8c4ded8feb3230e027bb1"
+    },
+    {
+      "path": "data/chinese-c4-0056-of-0096.jsonl.zst",
+      "name": "chinese-c4-0056-of-0096.jsonl.zst",
+      "size": 238326044,
+      "sha256": "4a58c954df4f9587120259b6750c93094d427ddb5129899f62efa31f1a440de0"
+    },
+    {
+      "path": "data/chinese-c4-0057-of-0096.jsonl.zst",
+      "name": "chinese-c4-0057-of-0096.jsonl.zst",
+      "size": 238343233,
+      "sha256": "4ce45f86d1d15fdfd12428361aff894077e07c189fb5eb308eda683ee5b6f163"
+    },
+    {
+      "path": "data/chinese-c4-0058-of-0096.jsonl.zst",
+      "name": "chinese-c4-0058-of-0096.jsonl.zst",
+      "size": 238321981,
+      "sha256": "e94c2375510894e64b8515d8b9bfba8fd79c8f8ccdac9650ad46c045c441e758"
+    },
+    {
+      "path": "data/chinese-c4-0059-of-0096.jsonl.zst",
+      "name": "chinese-c4-0059-of-0096.jsonl.zst",
+      "size": 238116221,
+      "sha256": "fff6250f927fdf2d47bf3fe79e3eca723d982fb94350d98d528f086e8f0f99fc"
+    },
+    {
+      "path": "data/chinese-c4-0060-of-0096.jsonl.zst",
+      "name": "chinese-c4-0060-of-0096.jsonl.zst",
+      "size": 238384347,
+      "sha256": "9ca850f83bed3c2ea8158999b2a6d6aaa7ebf2bc5755d6f0afd3412baad0c45b"
+    },
+    {
+      "path": "data/chinese-c4-0061-of-0096.jsonl.zst",
+      "name": "chinese-c4-0061-of-0096.jsonl.zst",
+      "size": 238455179,
+      "sha256": "8efdb5132fc716765da752795a9b12bc2e94e2313423417ca4182dd2924dd05d"
+    },
+    {
+      "path": "data/chinese-c4-0062-of-0096.jsonl.zst",
+      "name": "chinese-c4-0062-of-0096.jsonl.zst",
+      "size": 238428640,
+      "sha256": "00a5c243fdf29ebd178014b1f00128a0a0fa614948d8e827f8b4e0cd4321b181"
+    },
+    {
+      "path": "data/chinese-c4-0063-of-0096.jsonl.zst",
+      "name": "chinese-c4-0063-of-0096.jsonl.zst",
+      "size": 238396236,
+      "sha256": "1a8d09aa6ad7e1f278efa39aff9b5e610509cad010bbc37cc1632688bfc0e00a"
+    },
+    {
+      "path": "data/chinese-c4-0064-of-0096.jsonl.zst",
+      "name": "chinese-c4-0064-of-0096.jsonl.zst",
+      "size": 238230096,
+      "sha256": "796e6efee4446db50500b2fb6f94a15e98bbf214c9f4844f1aa242a1e2bd27d4"
+    },
+    {
+      "path": "data/chinese-c4-0065-of-0096.jsonl.zst",
+      "name": "chinese-c4-0065-of-0096.jsonl.zst",
+      "size": 238261370,
+      "sha256": "cabe04e015df6932343c588f907170c3cd855f8642e3e50c6c26ebce865c90c1"
+    },
+    {
+      "path": "data/chinese-c4-0066-of-0096.jsonl.zst",
+      "name": "chinese-c4-0066-of-0096.jsonl.zst",
+      "size": 238228361,
+      "sha256": "f61dcd71c69a14973b263fc699dd7a093fe1110003d8947f9a8392702c333cd3"
+    },
+    {
+      "path": "data/chinese-c4-0067-of-0096.jsonl.zst",
+      "name": "chinese-c4-0067-of-0096.jsonl.zst",
+      "size": 238237545,
+      "sha256": "4fec1c3a7f489bf49881d3279ddd81db8a9d8f7f06627909796065e3b9962b70"
+    },
+    {
+      "path": "data/chinese-c4-0068-of-0096.jsonl.zst",
+      "name": "chinese-c4-0068-of-0096.jsonl.zst",
+      "size": 238334384,
+      "sha256": "e162cde241abb94faab65626258253af8d5e9e89c18f42ae0eb43463d035e2cb"
+    },
+    {
+      "path": "data/chinese-c4-0069-of-0096.jsonl.zst",
+      "name": "chinese-c4-0069-of-0096.jsonl.zst",
+      "size": 238344374,
+      "sha256": "2728ba7c1fdad726a54e7d90ba21299ae97e1043e81cf6b2abab6d021ba6b562"
+    },
+    {
+      "path": "data/chinese-c4-0070-of-0096.jsonl.zst",
+      "name": "chinese-c4-0070-of-0096.jsonl.zst",
+      "size": 238133384,
+      "sha256": "82077526002155cba5c88021b3d0afe530416b569b8a1546f533036d0ea385b5"
+    },
+    {
+      "path": "data/chinese-c4-0071-of-0096.jsonl.zst",
+      "name": "chinese-c4-0071-of-0096.jsonl.zst",
+      "size": 238326842,
+      "sha256": "511d7c7049653ae7550e74492e3c04363ea8a3c73fd26dffdde650e251b9fe30"
+    },
+    {
+      "path": "data/chinese-c4-0072-of-0096.jsonl.zst",
+      "name": "chinese-c4-0072-of-0096.jsonl.zst",
+      "size": 238290734,
+      "sha256": "3cb02f37840ed7068e92f05401a834860b4db3992f241b70399f75e86f82f300"
+    },
+    {
+      "path": "data/chinese-c4-0073-of-0096.jsonl.zst",
+      "name": "chinese-c4-0073-of-0096.jsonl.zst",
+      "size": 238153712,
+      "sha256": "2127848b3dc9b74e7a0074cc259ea360e67e3c9c8bb7fefa0f4e47d9da985ce2"
+    },
+    {
+      "path": "data/chinese-c4-0074-of-0096.jsonl.zst",
+      "name": "chinese-c4-0074-of-0096.jsonl.zst",
+      "size": 238368251,
+      "sha256": "e959a52b3175f20eec2117b4f9eecf2b779374021d0d11c04b81b850bf733001"
+    },
+    {
+      "path": "data/chinese-c4-0075-of-0096.jsonl.zst",
+      "name": "chinese-c4-0075-of-0096.jsonl.zst",
+      "size": 238227861,
+      "sha256": "873615ad27df0fbfce888d0292bb65f89f6b49fcb89e293550b13f758ff26ffa"
+    },
+    {
+      "path": "data/chinese-c4-0076-of-0096.jsonl.zst",
+      "name": "chinese-c4-0076-of-0096.jsonl.zst",
+      "size": 238448118,
+      "sha256": "f43c903a2eff0c641339205b809c781a34186f04d24e94b744520a098c373c49"
+    },
+    {
+      "path": "data/chinese-c4-0077-of-0096.jsonl.zst",
+      "name": "chinese-c4-0077-of-0096.jsonl.zst",
+      "size": 238306190,
+      "sha256": "a51214185ac96d1b0335ed92aa3c0896ef7ad1ef48dbf257d70c00469769e653"
+    },
+    {
+      "path": "data/chinese-c4-0078-of-0096.jsonl.zst",
+      "name": "chinese-c4-0078-of-0096.jsonl.zst",
+      "size": 238350309,
+      "sha256": "5df89fd95be5fb5994534e01077150986bdf678145a1a7d526bb6010890c5ed4"
+    },
+    {
+      "path": "data/chinese-c4-0079-of-0096.jsonl.zst",
+      "name": "chinese-c4-0079-of-0096.jsonl.zst",
+      "size": 238335496,
+      "sha256": "e506790540f804ab536a2c9c30fae491dcfd682141438f2d3aa714c5d8aa403c"
+    },
+    {
+      "path": "data/chinese-c4-0080-of-0096.jsonl.zst",
+      "name": "chinese-c4-0080-of-0096.jsonl.zst",
+      "size": 238167160,
+      "sha256": "238548f8f4e876e919c10039edee1d4d99f5b45f31004efe47c9fe227295bf23"
+    },
+    {
+      "path": "data/chinese-c4-0081-of-0096.jsonl.zst",
+      "name": "chinese-c4-0081-of-0096.jsonl.zst",
+      "size": 238236180,
+      "sha256": "b4b40689d330b2639167a0fa9c14143eeefbf1ee831320aaeb0ba8b063253198"
+    },
+    {
+      "path": "data/chinese-c4-0082-of-0096.jsonl.zst",
+      "name": "chinese-c4-0082-of-0096.jsonl.zst",
+      "size": 238103954,
+      "sha256": "b41da0b16bf9a66b5a1b10e5ff247ac3ee3263191067e3c57463bf649d5d3f62"
+    },
+    {
+      "path": "data/chinese-c4-0083-of-0096.jsonl.zst",
+      "name": "chinese-c4-0083-of-0096.jsonl.zst",
+      "size": 238308341,
+      "sha256": "691d3dea0fef23af0c993b28d0946ed1b7c4d2ebc0284dc5960cb845f8f61aba"
+    },
+    {
+      "path": "data/chinese-c4-0084-of-0096.jsonl.zst",
+      "name": "chinese-c4-0084-of-0096.jsonl.zst",
+      "size": 238287082,
+      "sha256": "e6feb9ef52faf9d343d14f39642910f64d0fd2e05d93bf602cf33feb2feb1a5e"
+    },
+    {
+      "path": "data/chinese-c4-0085-of-0096.jsonl.zst",
+      "name": "chinese-c4-0085-of-0096.jsonl.zst",
+      "size": 238254479,
+      "sha256": "d35d69a28cd77be4cfe9ce4439de49fa0fabad23e6c2136c137ef3757daf933a"
+    },
+    {
+      "path": "data/chinese-c4-0086-of-0096.jsonl.zst",
+      "name": "chinese-c4-0086-of-0096.jsonl.zst",
+      "size": 238342616,
+      "sha256": "81673bdd2205aa1d8f270fcb23e7a59e1b179a0c2cf2eb6a262305d9daa9eaac"
+    },
+    {
+      "path": "data/chinese-c4-0087-of-0096.jsonl.zst",
+      "name": "chinese-c4-0087-of-0096.jsonl.zst",
+      "size": 238316843,
+      "sha256": "2b6fa90b5d73db51f13c6c9781b1da75a6b4e3da6a08938151924d26945e9bab"
+    },
+    {
+      "path": "data/chinese-c4-0088-of-0096.jsonl.zst",
+      "name": "chinese-c4-0088-of-0096.jsonl.zst",
+      "size": 238386697,
+      "sha256": "fa60450e01bd22ea09c1e1eb1909fec8c76d997f5bf570f1387407e0c431f097"
+    },
+    {
+      "path": "data/chinese-c4-0089-of-0096.jsonl.zst",
+      "name": "chinese-c4-0089-of-0096.jsonl.zst",
+      "size": 238394359,
+      "sha256": "e39f92f70242a68063103efbcaf2b5f0752ca97361b8f4f71341fe27f7f55e7d"
+    },
+    {
+      "path": "data/chinese-c4-0090-of-0096.jsonl.zst",
+      "name": "chinese-c4-0090-of-0096.jsonl.zst",
+      "size": 238241135,
+      "sha256": "78f4bd95c9334101140df52ca036bf44fe9e45568414c3024abc469062a62ec4"
+    },
+    {
+      "path": "data/chinese-c4-0091-of-0096.jsonl.zst",
+      "name": "chinese-c4-0091-of-0096.jsonl.zst",
+      "size": 238361095,
+      "sha256": "c986cc88d4fc4e01dda88f45d3dfd7ce2f7c1a7d1b2ea3a56a8c381727c01fa7"
+    },
+    {
+      "path": "data/chinese-c4-0092-of-0096.jsonl.zst",
+      "name": "chinese-c4-0092-of-0096.jsonl.zst",
+      "size": 238258510,
+      "sha256": "5b9f8e290f8a11d4a9eda8df1d343422400bcbf22e13ec9da2d25c0b69fe3eaa"
+    },
+    {
+      "path": "data/chinese-c4-0093-of-0096.jsonl.zst",
+      "name": "chinese-c4-0093-of-0096.jsonl.zst",
+      "size": 238205575,
+      "sha256": "e0ed899869b03c3f6de880e290ebea126146bc0dd6905e3d2ffcfb2436eba5c9"
+    },
+    {
+      "path": "data/chinese-c4-0094-of-0096.jsonl.zst",
+      "name": "chinese-c4-0094-of-0096.jsonl.zst",
+      "size": 238240189,
+      "sha256": "81b2cbef30123a1c9e8a990e26b4baebbe31da257ee33d971aeb81b7d8bc1533"
+    },
+    {
+      "path": "data/chinese-c4-0095-of-0096.jsonl.zst",
+      "name": "chinese-c4-0095-of-0096.jsonl.zst",
+      "size": 238225725,
+      "sha256": "cab0d30598095104004b84d43536bfc47bc5da6766c61f30cb1ce4476ca7b4a9"
+    }
+  ]
+}

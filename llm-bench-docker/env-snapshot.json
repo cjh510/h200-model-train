@@ -1,0 +1,14 @@
+{
+  "host": "node-a",
+  "time": "2026-11-05T10:11:55+08:00",
+  "items": [
+    {"level":"INFO","item":"操作系统","detail":"cat: /etc/os-release: No such file or directory / glibc ldd (cygwin) 2.5.0 "},
+    {"level":"FAIL","item":"nvidia-smi","detail":"命令不存在 —— 没有驱动就没有一切，先装驱动 "},
+    {"level":"FAIL","item":"卡间互联","detail":"topo 里没有任何 NV 链接 —— 全走 PCIe，不要报 TP8 的结果 "},
+    {"level":"WARN","item":"RDMA 网卡","detail":"无 /sys/class/infiniband —— 双机只能走 TCP socket。        后果：70B 必须用 TP8×PP2（跨机只传激活），且不要指望 DP 扩展。见 TESTPLAN 第 3 节 "},
+    {"level":"WARN","item":"memlock","detail":" → IB 注册大 buffer 会失败，设 LimitMEMLOCK=infinity "},
+    {"level":"FAIL","item":"容器引擎","detail":"既没 docker 也没 containerd/nerdctl → 容器路线走不了，改用裸机 uv 方案（llm-bench-bare） "},
+    {"level":"INFO","item":"CPU/内存","detail":"18 核 / 32 GB（建模瞬时要把完整权重放 host 时要用到） "},
+    {"level":"WARN","item":"时钟","detail":"没有 chronyc → 双机时间戳可能不同源，跨机延迟统计会失真 "}
+  ]
+}
